@@ -24,7 +24,7 @@ def get_material_properties(ifc_material_properties:list) -> dict:
     
 
 if __name__ == '__main__':
-    path = r"P:\2 ENG\BG\BG19-00 EnVis\4 Modelle Analyse\0 EFHeinfach\# Aktuell\2023 02 10 EFHeinfach 14 Spaces kombiniert\EFHeinfach14_2023 02 18 - Kombination.ifc"
+    path = 'file/EFHeinfach14_2023 02 20 - Kombination.ifc'
     file = ifcopenshell.open(path)
     ifc_material_properties = file.by_type('ifcMaterialProperties')
     materials = get_material_properties(ifc_material_properties)

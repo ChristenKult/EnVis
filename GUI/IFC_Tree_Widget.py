@@ -4,7 +4,6 @@ import sys
 import os.path
 from PyQt5.QtWidgets import QTreeWidget, QTreeWidgetItem, QApplication, QWidget, QVBoxLayout
 import ifcopenshell
-from filedialog import FileDialog
 
 class Window(QWidget):
 	def __init__(self):
@@ -163,7 +162,7 @@ if __name__ == '__main__':
 	w = Window()
 	w.setWindowTitle('Perio')
 	w.resize(1200, 800)
-	filename = r"P:\2 ENG\BG\BG19-00 EnVis\4 Modelle Analyse\0 EFHeinfach\# Aktuell\2023 02 10 EFHeinfach 14 Spaces kombiniert\EFHeinfach14_2023 02 10 - Kombination.ifc"
+	filename = 'file/EFHeinfach14_2023 02 20 - Kombination.ifc'
 	if os.path.isfile(filename):
 		w.load_file(filename)
 		w.show()
